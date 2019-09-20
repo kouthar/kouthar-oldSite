@@ -1,21 +1,60 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 
-body {
-    margin: 0;
-    padding: 0;
-    background: url("assets/headerBackground.jpg") no-repeat;
-    background-size: cover;
+
+
+
+
+@media only screen and (max-height: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background: url("assets/headerBackground.jpg") no-repeat;
+        background-size: cover;
+        size: cover;
+        height: 100vh;
+
+    }
+
+    .box .box-img {
+        height: 50%;
+        width: 50%;
+    }
+
+    box h1 {
+        font-size: 1em;
+    }
+
+    
 }
 
+@media only screen and (max-height: 992px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background: url("assets/headerBackground.jpg") no-repeat;
+        background-size: cover;
+        size: cover;
+    }
+
+    .box h1 {
+        font-size: 1.5em;
+    }
+    
+}
+
+
+
 .box {
-    width: 45em;
+    width: 60%;
     background: rgba(250, 255, 249, 0.9);
-    padding: 40px;
+    padding: 3em;
     text-align: center;
     margin: auto;
     margin-top: 5%;
     color: rgb(0, 0, 0);
     font-family: 'Work Sans', sans-serif;
+    vertical-align: center;
+
 }
 
 .box .box-img {
@@ -28,8 +67,9 @@ body {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .12em solid  rgb(105, 29, 48); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
+    overflow-wrap: anywhere;
+    word-break: break-all;
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0em; /* Adjust as needed */
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .7s step-end infinite;
