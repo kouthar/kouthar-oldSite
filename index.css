@@ -102,3 +102,11 @@ h4 a:hover {
     width: 200px;
     height: 200px;
 }
+
+.signature h5 {
+    text-align: center;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+    
+}
